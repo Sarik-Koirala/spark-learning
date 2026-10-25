@@ -1,0 +1,14 @@
+// Spark Starter Snippet
+{
+  "Spark session": {
+    "prefix": "startSpark",
+    "scope": "python,jupyter",
+    "body": [
+      "from pyspark.sql import SparkSession",
+      "from pyspark.sql import functions as F",
+      "",
+      "spark = SparkSession.builder.master(\"local[*]\").appName(\"${1:app}\").getOrCreate()"
+    ],
+    "description": "Spark Starter Snippet: start a local Spark session"
+  }
+}
